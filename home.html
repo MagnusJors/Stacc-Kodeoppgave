@@ -19,11 +19,13 @@
 
   <!--Søke knapp med funksjon   -->
 <header>
-  <h2>Know your Costumer</h2>
+  <h2>Know your Customer</h2>
   <form class="bar" style="margin:auto;max-width:300px">
   <input id="searchbar" type="text" placeholder="Søk på navn og etternavn" name="search2">
   <button type="button" onclick=getScoreByName()><i class="fa fa-search"></i></button>
+  
   </form>
+  <p id="error-message"></p>
 </header>
 
 <section>
@@ -31,13 +33,9 @@
   <!-- Tabbel med funksjons ID -->
   <article>
     <table id="table1" style="width: 50%">
-      <tr>
         <th><h5>Name</h5></th>
         <th><h5>Score</h5></th>
-      </tr>
-  
     </table>
-
 
   </article>
 </section>
