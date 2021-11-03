@@ -1,0 +1,2 @@
+# Stacc-Kodeoppgave
+Årets kodeoppgave er en åpen oppgave relatert til KYC. Det er opp til dere hvilken teknologi dere bruker til oppgaven og hvordan den løses. Det er dermed mulig å løse den uavhengig av om du foretrekker backend, frontend eller hele stacken. Det viktigste er at dere lager en applikasjon eller et API som gjør det mulig å utføre KYC sjekker av enkelt individer og/eller personer i et selskap.
