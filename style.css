@@ -17,7 +17,7 @@ form.bar button {
   float: left;
   width: 20%;
   padding: 10px;
-  background: #3aebf1;
+  background: #2980B9;
   color: white;
   font-size: 17px;
   border: 1px solid grey;
@@ -27,7 +27,7 @@ form.bar button {
 
 /* Endrer farge på knappen når du holder over den. */
 form.bar button:hover {
-  background: #86e7ee;
+  background: #6DD5FA;
 }
 
 form.bar::after {
@@ -37,17 +37,19 @@ form.bar::after {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: verdana;
+  
 }
 
 
 /* Stilering av header */
 header {
-  background-color: lightcyan;
   padding: 30px;
   text-align: center;
   font-size: 35px;
-  color: grey;
+  color: #ffffff;
+  height: 300px;
+  background-image: linear-gradient(to bottom right, #2980B9, #6DD5FA, #FFFFFF);
 }
 
 
@@ -55,26 +57,26 @@ header {
 nav {
   float: left;
   width: 30%;
-  background: white;
+  background: rgb(30, 255, 0);
   padding: 20px;
 }
 
-/* For listen */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
+
 
 article {
   float: left;
   padding: 20px;
-  width: 70%;
+  width: 125%;
   background-color: rgb(255, 255, 255);
   
 }
 
-table, th, td {
-  border:1px solid black;
+/* Sentrering av tabel og resultat */
+table, th {
+  border: 0,1px solid #6DD5FA;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 
@@ -84,21 +86,76 @@ section::after {
   content: "";
   display: table;
   clear: both;
+  
 }
 
 /* Stilering av footer */
-footer {
-  background-color: lightcyan;
-  padding: 10px;
-  text-align: center;
-  color: rgb(109, 95, 95);
+.footer-basic {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  position: relative;
-  left: 100px;
+/* CSS stilering fra https://www.web-eau.net/blog/10-best-footer-html-css-snippets */
+.footer-basic {
+  padding:40px 0;
+  background-color:#ffffff;
+  color:#4b4c4d;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
 }
 
 
