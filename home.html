@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="backend.js"></script>
+  <!-- Stylesheet for knapp logo -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stacc Challenge med Magnus</title>
+  
+</head>
+<body>
+
+  
+<header>
+
+  <h2>Know your Costumer</h2>
+
+  <form class="bar" style="margin:auto;max-width:300px">
+  <input id="searchbar" type="text" placeholder="Søk på navn og etternavn" name="search2">
+  <button type="button" onclick=getScoreByName()><i class="fa fa-search"></i></button>
+  </form>
+
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <h3>Søkt etter:</h3>
+      <li>Navn og etternavn</li>
+      <li>Mobilnummer</li>
+      <li>Organisasjonsnummer</li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Resultat: </h1>
+    <table id="table1" style="width:70%">
+      <tr>
+        <th>Name</th>
+        <th>Score</th>
+      </tr>
+  
+    </table>
+
+
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>

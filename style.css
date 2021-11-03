@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Søkebaren */
+form.bar input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* Selve knappen */
+form.bar button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #3aebf1;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+/* Endrer farge på knappen når du holder over den. */
+form.bar button:hover {
+  background: #86e7ee;
+}
+
+form.bar::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Stilering av header */
+header {
+  background-color: lightcyan;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: grey;
+}
+
+
+/* Bokser for å plasere tekst i */
+nav {
+  float: left;
+  width: 30%;
+  background: white;
+  padding: 20px;
+}
+
+/* For listen */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: rgb(255, 255, 255);
+  
+}
+
+table, th, td {
+  border:1px solid black;
+}
+
+
+
+/* lager plass  etter boksene */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Stilering av footer */
+footer {
+  background-color: lightcyan;
+  padding: 10px;
+  text-align: center;
+  color: rgb(109, 95, 95);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  left: 100px;
+}
+
+
+
+/* Responsive layout - stakker boksene ved skalering av skjerm */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
